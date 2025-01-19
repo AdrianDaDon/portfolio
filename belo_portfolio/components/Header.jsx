@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 
 const Header = () => {
@@ -22,8 +23,9 @@ const Header = () => {
           </Link>
         </div>
 
+        {/* MOBILE DEVICE NAVIGATION */}
         <div className="xl:hidden">
-
+          <MobileNav />
         </div>
 
       </div>
