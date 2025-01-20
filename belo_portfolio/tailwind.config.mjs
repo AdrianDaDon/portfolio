@@ -20,7 +20,7 @@ export default {
 		xl: "1200px"
 	},
 	fontFamily: {
-		primary: "var(--font-jetbriansMono)"
+		primary: "var(--font-jetbrainsMono)"
 	},
   	extend: {
   		colors: {
