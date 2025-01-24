@@ -43,7 +43,7 @@ export default function Photo() {
       {/* Rotating Circle */}
 
       <motion.svg
-        className="w-[280px] xl:w-[450px] h-[280px] xl:h-[450]"
+        className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506]"
         fill="transparent"
         viewBox={"0 0 506 506"}
         xmlns={"https://www.w3.org/2000/svg"}
