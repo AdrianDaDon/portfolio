@@ -24,6 +24,11 @@
     border-right: 5px solid;
   }
 
+  .imgEdit {
+    overflow: hidden;
+    border-radius: 53%;
+  }
+
   /* ANIMATIONS */
   @keyframes cursor {
     50% {

@@ -34,7 +34,7 @@ export default function Photo() {
             priority
             quality={100}
             fill
-            className="object-contain"
+            className="object-cover imgEdit"
             alt="An Image of myself"
           />
         </motion.div>
