@@ -53,7 +53,7 @@ export default function Photo() {
           cy={"253"}
           r={"250"}
           stroke={"rgb(170,170,170)"}
-          strokeWidth={"4"}
+          strokeWidth={"7"}
           strokeLinejoin={"round"}
           strokeLinecap={"round"}
           initial={{strokeDasharray: "24 10 0 0"}}
