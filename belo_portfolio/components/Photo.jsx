@@ -3,35 +3,70 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-
 export default function Photo() {
-    return(
-        <div className="w-full h-full relative">
-            <motion.div
-                initial={{opacity: 0}}
-                animate={{
-                    opacity: 1,
-                    transition: {
-                        duration: 2.4,
-                        delay: 0.4,
-                        ease: 'easeInOut'
-                    }
-                }}
+  return (
+    <div className="w-full h-full relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: {
+            duration: 0.4,
+            delay: 2,
+            ease: "easeIn",
+          },
+        }}
+      >
+        <motion.div
+          className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] mix-blend-lighten absolute"
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 2.4,
+              duration: 0.4,
+              ease: "easeInOut",
+            },
+          }}
+        >
+          <Image
+            src="/assets/codeLogo.png"
+            priority
+            quality={100}
+            fill
+            className="object-contain"
+            alt="An Image of myself"
+          />
+        </motion.div>
+      </motion.div>
 
-            >
-                <div
-                    className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] mix-blend-lighten"
-                >
-                    <Image
-                        src="/assets/IMG_0005.JPG"
-                        priority
-                        quality={100}
-                        fill
-                        className="object-contain"
-                        // alt="graduation picture of Adrian"
-                    />
-                </div>
-            </motion.div>
-        </div>
-    )
+      {/* Rotating Circle */}
+
+      <motion.svg
+        className="w-[280px] xl:w-[450px] h-[280px] xl:h-[450]"
+        fill="transparent"
+        viewBox={"0 0 506 506"}
+        xmlns={"https://www.w3.org/2000/svg"}
+      >
+        <motion.circle
+          cx={"253"}
+          cy={"253"}
+          r={"250"}
+          stroke={"rgb(170,170,170)"}
+          strokeWidth={"4"}
+          strokeLinejoin={"round"}
+          strokeLinecap={"round"}
+          initial={{strokeDasharray: "24 10 0 0"}}
+          animate={{strokeDasharray: ["15 120 25 25", "16 25 97 64", "3 250 22 22"],
+            rotate: [120, 360]
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            repeatType: "reverse"
+          }}
+        />
+      </motion.svg>
+    </div>
+  );
 }
