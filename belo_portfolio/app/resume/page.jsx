@@ -1,76 +1,99 @@
 "use client";
 
+import { about, education, experience, skills } from "./data";
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaPython,
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-import { TbBrandCSharp } from "react-icons/tb";
-
-const about = {
-    title: 'About me',
-    description: 'God gave me the breathe, hunger woke me up. Lets go get this bread',
-    info: [
-        {
-            fieldName: 'Name',
-            fieldValue: 'Belo'
-        },
-        {
-            fieldName: 'Phone',
-            fieldValue: '(+27 65 149 7543)'
-        },
-        {
-            fieldName: 'Experience',
-            fieldValue: '5+ Years'
-        },
-        {
-            fieldName: 'Nationality',
-            fieldValue: 'Congolese'
-        },
-        {
-            fieldName: 'Email',
-            fieldValue: 'beadrie022@student.wethinkcode.co.za'
-        },
-        {
-            fieldName: 'Freelance',
-            fieldValue: 'Available'
-        },        {
-            fieldName: 'Spoken Languages',
-            fieldValue: 'English, French'
-        },
-    ]
-}
-
-const experience = {
-    icon: "",
-    title: "My experience",
-    description: "Not by might, not by power but by the spirit of the living God",
-    items: [
-        {
-            company: 'University of Johannesburg',
-            position: 'Development Software Tutor',
-            duration: "June 2024 - November 2024",
-        },
-
-        {
-            company: 'University of Johannesburg',
-            position: 'Development Software Tutor',
-            duration: "June 2024 - November 2024",
-        },
-
-        {
-            company: 'E-commerce Startup',
-            position: 'Freelance Full-Stack Web Developer',
-            duration: "November 2024 - present",
-        }
-    ]
-}
+  Tabs,
+  TabsContent,
+  TabsProvider,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+import { TabsList } from "@radix-ui/react-tabs";
+import { Scroll } from "lucide-react";
 
 export default function Resume() {
-  return <div>Resume screen</div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+          delay: 2.4,
+          ease: "easeInOut",
+        },
+      }}
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    >
+      <div className="container mx-auto">
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col xl:flex-row gap-[60px]"
+        >
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="about">About me</TabsTrigger>
+          </TabsList>
+          {/* CONTENT */}
+          <div className="min-h-[70vh] w-full">
+            {/* EXPERIENCE */}
+            <TabsContent value="experience" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {experience.description}
+                </p>
+
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {experience.items.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        >
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.position}
+                          </h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+                            <p className="text-white/60">{item.company}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+
+            {/* EDUCATION */}
+            <TabsContent value="education" className="w-full">
+              education
+            </TabsContent>
+
+            {/* SKILLS */}
+            <TabsContent value="skills" className="w-full">
+              skills
+            </TabsContent>
+
+            {/* ABOUT */}
+            <TabsContent value="about" className="w-full">
+              about
+            </TabsContent>
+          </div>
+        </Tabs>
+      </div>
+    </motion.div>
+  );
 }
