@@ -15,6 +15,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
     stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
     name: "",
-    image: "",
+    image: null,
     live: "",
     github: "",
   },
@@ -37,7 +38,7 @@ const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
     stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
     name: "",
-    image: "",
+    image: null,
     live: "",
     github: "",
   },
@@ -53,7 +54,7 @@ const projects = [
       { name: "Tailwind CSS" },
     ],
     name: "",
-    image: "",
+    image: null,
     live: "",
     github: "",
   },
@@ -71,11 +72,14 @@ export default function Work() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.4, delay: 2.4, ease: "easeIn" } }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.4, delay: 2.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:felx-row xl:gap-[30px]">
+        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* OUTLINE NUMBER */}
@@ -164,6 +168,15 @@ export default function Work() {
               ))}
 
               {/* SLIDER BUTTON */}
+              <WorkSliderBtn
+                containerStyles={
+                  "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl: justify-none"
+                }
+
+                btnStyles={
+                  "bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                }
+              />
             </Swiper>
           </div>
         </div>
