@@ -17,11 +17,11 @@ export const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Belo",
+      fieldValue: "Belo Adrien",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+27 65 149 7543)",
+      fieldValue: "+27 651497543",
     },
     {
       fieldName: "Experience",
@@ -33,15 +33,11 @@ export const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "beadrie022@student.wethinkcode.co.za",
+      fieldValue: "tarahisensai@gmail.com",
     },
     {
       fieldName: "Freelance",
       fieldValue: "Available",
-    },
-    {
-      fieldName: "Spoken Languages",
-      fieldValue: "English, French",
     },
   ],
 };
