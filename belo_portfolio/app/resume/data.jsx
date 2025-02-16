@@ -11,7 +11,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export const about = {
-  title: "About me",
+  title: "About Me",
   description:
     "God gave me the breathe, hunger woke me up. Lets go get this bread",
   info: [
@@ -48,7 +48,7 @@ export const about = {
 
 export const experience = {
   icon: "/assest/resume/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description: "Not by might, not by power but by the spirit of the living God",
   items: [
     {
@@ -73,30 +73,30 @@ export const experience = {
 
 export const education = {
   icon: "/assest/resume/cap.svg",
-  title: "My education",
+  title: "My Education",
   description:
     "Blessed are those who hunger and thirst for righteousness, for they shall be filled",
   items: [
     {
       institution: "University of Johannesburg",
-      degree: "Advanced Diploma in Business Information Technology",
-      duration: "September 2022 - present",
+      degree: "Adv.Dip Business Information Tech",
+      duration: "2022 - present",
     },
     {
-      institution: "Hack The Box Academy(Online)",
+      institution: "HTB Academy(Online)",
       degree: "Cyber Security",
-      duration: "Noverber 2024 - present",
+      duration: "2024 - present",
     },
     {
       institution: "WeThinkCode_",
       degree: "Software Engineering",
-      duration: "September 2022 - August 2024",
+      duration: "2022 - 2024",
     },
   ],
 };
 
 export const skills = {
-  title: "My skills",
+  title: "My Skills",
   description: "I can do all things through Christ who strengthens me",
   shillList: [
     {
