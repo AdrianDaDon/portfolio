@@ -71,7 +71,7 @@ export default function Work() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 1, transition: { duration: 0.4, delay: 2.4, ease: "easeIn" } }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -146,12 +146,24 @@ export default function Work() {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] reletive group flex justify-center items-center bg-pink-50/20">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* OVERLAY */}
-                    <div></div>
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+
+                    {/* IMAGE */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={activeProject.image}
+                        fill
+                        className="object-cover"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
+
+              {/* SLIDER BUTTON */}
             </Swiper>
           </div>
         </div>
