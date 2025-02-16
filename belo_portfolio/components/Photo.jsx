@@ -52,7 +52,7 @@ export default function Photo() {
           cx={"253"}
           cy={"253"}
           r={"250"}
-          stroke={"rgb(170,170,170)"}
+          stroke={"rgb(111,162,255)"}
           strokeWidth={"7"}
           strokeLinejoin={"round"}
           strokeLinecap={"round"}
