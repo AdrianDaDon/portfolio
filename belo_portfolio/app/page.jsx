@@ -1,11 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
+import jsPDF from "jspdf";
 
 export default function Home() {
+
+  const [saving, setSaving] = useState(false);
+
+  const handleDownload = () => {
+    setSaving(true);
+    const doc = new jsPDF("potrait", "px", "a4", false);
+    
+    doc.addImage("assets/resume/belo_cv.png", "PNG", 0, 0, 417, 653);
+    
+    doc.save("belo_cv.pdf");
+    setSaving(false);
+
+  }
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -28,6 +46,7 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
