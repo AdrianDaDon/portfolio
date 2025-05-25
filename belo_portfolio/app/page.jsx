@@ -33,7 +33,7 @@ export default function Home() {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               Hi, I'm <br />{" "}
-              <span className="text-accent type-effect">Belo Adrien</span>
+              <span className="text-accent">Belo Adrien</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               "Faith is the substance of things hoped for and the evidence of

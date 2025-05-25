@@ -7,7 +7,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export const about = {
@@ -28,12 +28,8 @@ export const about = {
       fieldValue: "5+ Years",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Congolese",
-    },
-    {
       fieldName: "Email",
-      fieldValue: "tarahisensai@gmail.com",
+      fieldValue: "youngkibwe@gmail.com",
     },
     {
       fieldName: "Freelance",
@@ -50,18 +46,12 @@ export const experience = {
     {
       company: "University of Johannesburg",
       position: "Development Software Tutor",
-      duration: "June 2024 - November 2024",
+      duration: "June 2024 - Present",
     },
 
     {
-      company: "University of Johannesburg",
-      position: "Development Software Tutor",
-      duration: "June 2024 - November 2024",
-    },
-
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Full-Stack Web Developer",
+      company: "Scrub-A-Dub Dogs Saloon",
+      position: "Freelance Web Developer",
       duration: "November 2024 - present",
     },
   ],
@@ -116,8 +106,8 @@ export const skills = {
       icon: <SiNextdotjs />,
     },
     {
-      name: "tailwind.css",
-      icon: <SiTailwindcss />,
+      name: "C Sharp",
+      icon: <TbBrandCSharp />,
     },
 
     {

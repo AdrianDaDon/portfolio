@@ -56,14 +56,15 @@ export default function Photo() {
           strokeWidth={"7"}
           strokeLinejoin={"round"}
           strokeLinecap={"round"}
-          initial={{strokeDasharray: "24 10 0 0"}}
-          animate={{strokeDasharray: ["15 120 25 25", "16 25 97 64", "3 250 22 22"],
-            rotate: [120, 360]
+          initial={{ strokeDasharray: "24 10 0 0" }}
+          animate={{
+            strokeDasharray: ["15 120 25 25", "16 25 97 64", "3 250 22 22"],
+            rotate: [120, 360],
           }}
           transition={{
             duration: 20,
             repeat: Infinity,
-            repeatType: "reverse"
+            repeatType: "reverse",
           }}
         />
       </motion.svg>

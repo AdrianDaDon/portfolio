@@ -13,7 +13,7 @@ export default function Stats() {
       text: "Commits in the last year",
     },
     {
-      num: 6,
+      num: 2,
       text: "Technologies mastered",
     },
     {
