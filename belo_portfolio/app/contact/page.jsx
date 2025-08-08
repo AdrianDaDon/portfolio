@@ -55,9 +55,13 @@ export default function Contact() {
             >
               <h3 className="text-4xl text-accent ">Let's collaborate</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                dolores blanditiis corrupti aspernatur, nihil ea recusandae
-
+                I’m always excited to work with people who share a passion for
+                bringing ideas to life. Whether you need a sleek, responsive
+                website, a user-friendly mobile app, or a complete digital
+                experience from concept to launch, I bring creativity, technical
+                expertise, and a problem-solving mindset to every project. Let’s
+                combine your vision with my skills to create something impactful
+                and memorable.
               </p>
 
               {/* INPUT FIELDS  */}
@@ -99,20 +103,18 @@ export default function Contact() {
           {/* INFO */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
-                {info.map((item, index) => (
-                    <li key={index} className="flex items-center gap-6">
-                        <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                            <div>
-                                {item.icon}
-                            </div>
-                        </div>
+              {info.map((item, index) => (
+                <li key={index} className="flex items-center gap-6">
+                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                    <div>{item.icon}</div>
+                  </div>
 
-                        <div className="flex-1">
-                            <p className="text-white/60">{item.title}</p>
-                            <h3 className="text-xl">{item.text}</h3>
-                        </div>
-                    </li>
-                ))}
+                  <div className="flex-1">
+                    <p className="text-white/60">{item.title}</p>
+                    <h3 className="text-xl">{item.text}</h3>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

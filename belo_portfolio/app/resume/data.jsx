@@ -7,7 +7,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiMysql } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export const about = {
@@ -61,17 +61,22 @@ export const education = {
   icon: "/assest/resume/cap.svg",
   title: "My Education",
   description:
-    "Blessed are those who hunger and thirst for righteousness, for they shall be filled",
+    "Education is the most powerful weapon which you can use to change the world and therefore I intend to be heavily armed.",
   items: [
     {
       institution: "University of Johannesburg",
       degree: "Adv.Dip Business Information Tech",
-      duration: "2022 - present",
+      duration: "2025 - present",
     },
     {
       institution: "HTB Academy(Online)",
       degree: "Cyber Security",
-      duration: "2024 - present",
+      duration: "2025 - present",
+    },
+    {
+      institution: "University of Johannesburg",
+      degree: "Dip Business Information Tech",
+      duration: "2022 - 2024",
     },
     {
       institution: "WeThinkCode_",
@@ -83,7 +88,7 @@ export const education = {
 
 export const skills = {
   title: "My Skills",
-  description: "I can do all things through Christ who strengthens me",
+  description: "Phillippians 4:13 'I can do all things through Christ who strengthens me'. Might not be apart of my skillset but I am willing to learn and grow.",
   shillList: [
     {
       name: "HTML5",
@@ -119,5 +124,9 @@ export const skills = {
       name: "python",
       icon: <FaPython />,
     },
+     {
+      name: "MySQL",
+      icon: <SiMysql />,
+     }
   ],
 };
