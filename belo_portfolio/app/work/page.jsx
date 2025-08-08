@@ -31,34 +31,34 @@ const projects = [
     github:
       "https://github.com/Sabelo-22/scrub",
   },
-  {
-    num: "02",
-    category: "Frontend",
-    title: "project 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
-    stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
-    name: "",
-    image: "/assets/codeLogo.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "Fullstack",
-    title: "project 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
-    stack: [
-      { name: "React Native" },
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-    ],
-    name: "",
-    image: "/assets/codeLogo.png",
-    live: "",
-    github: "",
-  },
+  // {
+  //   num: "02",
+  //   category: "Frontend",
+  //   title: "project 2",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
+  //   stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
+  //   name: "",
+  //   image: "/assets/codeLogo.png",
+  //   live: "",
+  //   github: "",
+  // },
+  // {
+  //   num: "03",
+  //   category: "Fullstack",
+  //   title: "project 3",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
+  //   stack: [
+  //     { name: "React Native" },
+  //     { name: "Next.js" },
+  //     { name: "Tailwind CSS" },
+  //   ],
+  //   name: "",
+  //   image: "/assets/codeLogo.png",
+  //   live: "",
+  //   github: "",
+  // },
 ];
 
 export default function Work() {
