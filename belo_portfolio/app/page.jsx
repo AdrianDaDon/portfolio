@@ -17,7 +17,7 @@ export default function Home() {
     setSaving(true);
     const doc = new jsPDF("potrait", "px", "a4", false);
     
-    doc.addImage("assets/resume/belo_cv.png", "PNG", 0, 0, 417, 653);
+    doc.addImage("assets/resume/Adrien_CV_latest.png", "PNG", 0, 0, 417, 653);
     
     doc.save("belo_cv.pdf");
     setSaving(false);
@@ -31,13 +31,13 @@ export default function Home() {
           {/* TEXT */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
+            <h1 className="h2 mb-6">
               Hi, I'm <br />{" "}
               <span className="text-accent">Belo Adrien</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              "Faith is the substance of things hoped for and the evidence of
-              things unseen"
+            <p className="max-w-[450px] mb-9 text-white/80">
+             I am an aspiring software developer with a strong foundation in system software and development software,
+             seeking to leverage tutoring experience and technical skills in a dynamic growth-oriented environment.
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">

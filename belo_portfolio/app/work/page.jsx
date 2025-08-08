@@ -21,14 +21,15 @@ const projects = [
   {
     num: "01",
     category: "Web development",
-    title: "project 1",
+    title: "ScrubAdub Dogs Salon",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam similique, excepturi expedita laboriosam voluptate .",
-    stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
+      "Scrub-A-Dub Dog Salon – Pet Grooming Website Designed and developed a clean, mobile-friendly website for a local dog grooming business. Features include service and pricing pages, a photo gallery, and a contact form. Focused on clear navigation, fast load times, and a friendly design that reflects the brand’s personality.",
+    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     name: "",
-    image: "/assets/codeLogo.png",
-    live: "",
-    github: "",
+    image: "/projects/scrubMobileView1.jpg",
+    live: "https://www.scrubadubdogsalon.co.za/",
+    github:
+      "https://github.com/Sabelo-22/scrub",
   },
   {
     num: "02",
@@ -172,7 +173,6 @@ export default function Work() {
                 containerStyles={
                   "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl: justify-none"
                 }
-
                 btnStyles={
                   "bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                 }

@@ -18,7 +18,7 @@ export default function Photo() {
         }}
       >
         <motion.div
-          className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:h-[458px] xl:w-[458px] mix-blend-lighten absolute"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -43,7 +43,7 @@ export default function Photo() {
       {/* Rotating Circle */}
 
       <motion.svg
-        className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506]"
+        className="w-[300px] xl:w-[466px] h-[300px] xl:h-[466]"
         fill="transparent"
         viewBox={"0 0 506 506"}
         xmlns={"https://www.w3.org/2000/svg"}
